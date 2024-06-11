@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokédex</title>
+    <link href="estilos.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<main>
+
+    <section id="infoPokemon1">
+        <div>
+            <h1 id="nombrePokemon"></h1>
+            <h2>ID</h2>
+            <h3 id="indexPokemon">0</h3>
+            <h2>Region Original</h2>
+            <h3 id="regionOriginal"></h3>
+        </div>
+        <img id="imgPokemon" alt="Pokemon actual" src="" title="Haga click para cambiar variación de color">
+    </section>
+
+    <section id="contenido">
+        <div>
+        <h1>Juegos Originarios</h1>
+        <h2 id="origenJuegos"></h2>
+        <h1>Peso</h1>
+        <h2 id="pesoPokemon"></h2>
+        <h1>Altura</h1>
+        <h2 id="alturaPokemon"></h2>
+        </div>
+        <h1 id="tituloStats">Estadisticas</h1>
+        <div id="estadisticas">
+            <h2>Salud</h2>
+            <h3 id="vida"></h3>
+            <h2>Ataque</h2>
+            <h3 id="attk"></h3>
+            <h2>Defensa</h2>
+            <h3 id="def"></h3>
+            <h2>Velocidad</h2>
+            <h3 id="vel"></h3>
+        </div>
+        <h1 id="tituloTipos">Tipos</h1>
+        <div id="tipos">
+        
+        </div>
+    </section>
+    
+    <section id="pasarPagina">
+        <button id="anteriorPok"><</button>
+        <input type="number" id="inputIDPokemon" value="1" min="1" max="1017">
+        <button id="siguientePok">></button>
+    </section>
+</main>
+    <script src="./js/conexionAPI.js"></script>
+    <script src="./js/funcionesDatos.js"></script>
+
+</body>
+</html>
